@@ -10,7 +10,7 @@ val catsEffect = "org.typelevel" %% "cats-effect" % "3.5.2"
 val catEffectTest = "org.typelevel" %% "cats-effect-testkit" % "3.5.2" % Test
 val scalaReflection = "org.scala-lang" % "scala-reflect" % scalaV
 val logback = "ch.qos.logback" % "logback-classic" % "1.4.14"
-val embedMongoVersion = "4.11.1"
+val embedMongoVersion = "4.12.0"
 
 val scalaTestDeps = Seq(
   "org.scalatest" %% "scalatest" % "3.2.17" % Test,
@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
