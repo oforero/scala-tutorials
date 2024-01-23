@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -393,7 +393,7 @@ lazy val scala_libraries_4 = (project in file("scala-libraries-4"))
     libraryDependencies ++= Seq(
       "org.scala-lang.modules" %% "scala-async" % "1.0.1",
       scalaReflection % Provided,
-      "org.tpolecat" %% "skunk-core" % "0.6.2",
+      "org.tpolecat" %% "skunk-core" % "0.6.3",
       logback,
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
       "org.typelevel" %% "cats-core" % "2.10.0"
