@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -364,7 +364,7 @@ lazy val scala_libraries_3 = (project in file("scala-libraries-3"))
     libraryDependencies += scalaMock,
     libraryDependencies += "com.softwaremill.retry" %% "retry" % "0.3.6",
     libraryDependencies ++= Seq(
-      "org.apache.logging.log4j" %% "log4j-api-scala" % "13.0.0",
+      "org.apache.logging.log4j" %% "log4j-api-scala" % "13.1.0",
       "org.apache.logging.log4j" % "log4j-core" % "2.22.0" % Runtime
     ),
     libraryDependencies += "com.lihaoyi" %% "os-lib" % osLibVersion
@@ -375,7 +375,7 @@ lazy val scala_libraries_os = (project in file("scala-libraries-os"))
     name := "scala-libraries",
     libraryDependencies ++= scalaTestDeps,
     libraryDependencies ++= Seq(
-      "org.apache.logging.log4j" %% "log4j-api-scala" % "13.0.0",
+      "org.apache.logging.log4j" %% "log4j-api-scala" % "13.1.0",
       "org.apache.logging.log4j" % "log4j-core" % "2.22.0" % Runtime
     ),
     libraryDependencies += "com.lihaoyi" %% "os-lib" % osLibVersion
@@ -423,7 +423,7 @@ val spireVersion = "0.18.0"
 val kafkaVersion = "7.5.2-ce"
 val pureconfigVersion = "0.17.4"
 val jackSonVersion = "2.16.0"
-val log4jApiScalaVersion = "13.0.0"
+val log4jApiScalaVersion = "13.1.0"
 val log4jVersion = "2.20.0"
 val avro4sVersion = "4.1.1"
 val kafkaAvroSerializer = "7.5.2"
