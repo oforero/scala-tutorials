@@ -60,7 +60,7 @@ lazy val scala2_core = (project in file("scala-core-modules/scala2-core"))
     libraryDependencies += "org.rogach" %% "scallop" % "5.0.1",
     libraryDependencies += "org.backuity.clist" %% "clist-core" % "3.5.1",
     libraryDependencies += "org.backuity.clist" %% "clist-macros" % "3.5.1" % "provided",
-    libraryDependencies += "args4j" % "args4j" % "2.33",
+    libraryDependencies += "args4j" % "args4j" % "2.37",
     libraryDependencies += "org.scala-lang" % "scala-compiler" % scalaVersion.value % "test",
     libraryDependencies += catsEffect
   )
@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
