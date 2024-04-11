@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -210,7 +210,7 @@ lazy val scala_akka_dependencies: Seq[ModuleID] = Seq(
   "com.typesafe.akka" %% "akka-actor-testkit-typed" % AkkaVersion % Test,
   "com.lightbend.akka" %% "akka-stream-alpakka-mongodb" % "5.0.0",
   "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
-  "org.mongodb.scala" %% "mongo-scala-driver" % "4.11.1",
+  "org.mongodb.scala" %% "mongo-scala-driver" % "4.11.2",
   "com.lightbend.akka" %% "akka-stream-alpakka-file" % "5.0.0",
   jUnitInterface,
   embeddedMongo % Test,
