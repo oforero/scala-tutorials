@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -506,7 +506,7 @@ lazy val cats_effects = (project in file("cats-effects"))
     name := "cats-effects",
     scalaVersion := scala3Version,
     libraryDependencies += catsEffect,
-    libraryDependencies += "org.typelevel" %% "munit-cats-effect-3" % "1.0.7" % Test,
+    libraryDependencies += "org.typelevel" %% "munit-cats-effect" % "2.0.0" % Test,
     libraryDependencies ++= scalaTestDeps,
     libraryDependencies += "junit" % "junit" % "4.13.2" % Test
   )
