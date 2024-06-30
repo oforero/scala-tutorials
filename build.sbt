@@ -13,10 +13,10 @@ val logback = "ch.qos.logback" % "logback-classic" % "1.4.14"
 val embedMongoVersion = "4.11.1"
 
 val scalaTestDeps = Seq(
-  "org.scalatest" %% "scalatest" % "3.2.17" % Test,
-  "org.scalatest" %% "scalatest-shouldmatchers" % "3.2.17" % Test,
-  "org.scalatest" %% "scalatest-wordspec" % "3.2.17" % Test,
-  "org.scalatest" %% "scalatest-flatspec" % "3.2.17" % Test
+  "org.scalatest" %% "scalatest" % "3.2.19" % Test,
+  "org.scalatest" %% "scalatest-shouldmatchers" % "3.2.19" % Test,
+  "org.scalatest" %% "scalatest-wordspec" % "3.2.19" % Test,
+  "org.scalatest" %% "scalatest-flatspec" % "3.2.19" % Test
 )
 
 val scalaMock = "org.scalamock" %% "scalamock" % "5.2.0" % Test
@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
