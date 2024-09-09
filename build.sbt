@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -295,7 +295,7 @@ lazy val scala_libraries = (project in file("scala-libraries"))
     )
   )
 
-val circeVersion = "0.14.6"
+val circeVersion = "0.14.10"
 val monixVersion = "3.4.1"
 val elastic4sVersion = "8.11.3"
 val sparkVersion = "3.5.0"
@@ -455,8 +455,8 @@ lazy val scala_libraries_6 = (project in file("scala-libraries-6"))
     libraryDependencies ++= scalaTestDeps,
     libraryDependencies ++= Seq(
       "io.circe" %% "circe-yaml" % "1.15.0",
-      "io.circe" %% "circe-generic" % "0.14.6",
-      "io.circe" %% "circe-parser" % "0.14.6"
+      "io.circe" %% "circe-generic" % "0.14.10",
+      "io.circe" %% "circe-parser" % "0.14.10"
     )
   )
 
