@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -525,8 +525,8 @@ lazy val doobie = (project in file("doobie"))
   .settings(
     name := "doobie",
     scalaVersion := scala3Version,
-    libraryDependencies += "org.tpolecat" %% "doobie-core" % "1.0.0-RC2",
-    libraryDependencies += "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC2"
+    libraryDependencies += "org.tpolecat" %% "doobie-core" % "1.0.0-RC6",
+    libraryDependencies += "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC6"
   )
 
 // Scala Native Project is disabled as it needs clang to installed in the target machine.
