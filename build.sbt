@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -317,7 +317,7 @@ lazy val scala_libraries_2 = (project in file("scala-libraries-2"))
       "com.github.cb372" %% "scalacache-guava" % "0.28.0",
       "com.github.cb372" %% "scalacache-cats-effect" % "0.28.0",
       "com.github.cb372" %% "scalacache-caffeine" % "0.28.0",
-      "com.beachape" %% "enumeratum" % "1.7.3"
+      "com.beachape" %% "enumeratum" % "1.7.5"
     ),
     libraryDependencies ++= Seq(
       "org.playframework" %% "play-slick" % "6.0.0",
@@ -355,7 +355,7 @@ lazy val scala_libraries_3 = (project in file("scala-libraries-3"))
       "org.http4s" %% "http4s-dsl" % http4sVersion,
       "org.http4s" %% "http4s-blaze-server" % http4sBlaze,
       "org.http4s" %% "http4s-blaze-client" % http4sBlaze,
-      "com.beachape" %% "enumeratum" % "1.7.3",
+      "com.beachape" %% "enumeratum" % "1.7.5",
       "com.github.pureconfig" %% "pureconfig" % "0.17.4",
       "com.github.pureconfig" %% "pureconfig-enumeratum" % "0.17.4",
       "com.typesafe" % "config" % "1.4.3",
