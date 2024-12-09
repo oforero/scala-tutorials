@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -345,7 +345,7 @@ lazy val scala_libraries_2 = (project in file("scala-libraries-2"))
   )
 
 val http4sBlaze = "0.23.15"
-val http4sVersion = "0.23.24"
+val http4sVersion = "0.23.30"
 val osLibVersion = "0.9.2"
 lazy val scala_libraries_3 = (project in file("scala-libraries-3"))
   .settings(
