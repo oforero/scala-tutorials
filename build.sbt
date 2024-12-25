@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -165,7 +165,7 @@ lazy val scala_core_collections =
       name := "scala-core-collections",
       scalaVersion := scala3Version,
       libraryDependencies ++= Seq(
-        "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4"
+        "org.scala-lang.modules" %% "scala-parallel-collections" % "1.1.0"
       ) ++ scalaTestDeps
     )
 
@@ -466,7 +466,7 @@ lazy val scala_strings = (project in file("scala-strings"))
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
     libraryDependencies += jUnitInterface,
-    libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4"
+    libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.1.0"
   )
 
 lazy val scala_design_patterns = (project in file("scala-design-patterns"))
