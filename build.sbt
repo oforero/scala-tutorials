@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -140,7 +140,7 @@ lazy val scala_core_dates =
       libraryDependencies ++= scalaTestDeps,
       libraryDependencies += "joda-time" % "joda-time" % "2.12.5",
       libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.32.0",
-      libraryDependencies += "com.typesafe" % "config" % "1.4.3"
+      libraryDependencies += "com.typesafe" % "config" % "1.4.5"
     )
 
 lazy val scala_lang = (project in file("scala-lang-modules/scala-lang"))
@@ -358,7 +358,7 @@ lazy val scala_libraries_3 = (project in file("scala-libraries-3"))
       "com.beachape" %% "enumeratum" % "1.7.3",
       "com.github.pureconfig" %% "pureconfig" % "0.17.4",
       "com.github.pureconfig" %% "pureconfig-enumeratum" % "0.17.4",
-      "com.typesafe" % "config" % "1.4.3",
+      "com.typesafe" % "config" % "1.4.5",
       "org.scalameta" %% "munit" % "0.7.29" % Test
     ),
     libraryDependencies += scalaMock,
