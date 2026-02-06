@@ -95,7 +95,7 @@ lazy val scala_core_7 = (project in file("scala-core-modules/scala-core-7"))
     name := "scala-core-7",
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
-    libraryDependencies += jUnitInterface,
+    libraryDependencies += jUnitInterface
   )
 
 lazy val scala_core_8 = (project in file("scala-core-modules/scala-core-8"))
@@ -558,7 +558,7 @@ lazy val scala3_libraries = (project in file("scala3-libraries"))
     scalaVersion := scala3Version,
     name := "scala3-libraries",
     libraryDependencies ++= Seq(
-      "com.github.japgolly.clearconfig" %% "core" % "3.1.0",
+      "com.github.japgolly.clearconfig" %% "core" % "3.3.0",
       "org.scalameta" %% "munit" % "0.7.29" % Test
     )
   )
